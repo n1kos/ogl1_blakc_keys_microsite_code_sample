@@ -1,0 +1,1229 @@
+@charset "utf-8";
+/* CSS Document */
+.wrapper {
+	width:100%;
+	margin:auto;
+   overflow: hidden;
+}
+
+.main {
+	width:100%;
+}
+
+
+html, body {
+    background: none repeat scroll 0 0 #FFF;
+    color: #ffffff;
+    font-family: "bettyregular";
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;/* remove for chrome scroll issus, will target ff only*//*or add exlusion to chrome below*/
+    min-height: 100%;
+    /*overflow: hidden;*/
+    width: 100%;
+    max-width: 1280px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+/* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */  
+  html, body { height: auto; }  
+}
+
+.bgres { /*general class instead of listing all elements*/
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center top;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when
+       the content's height is greater than the image's height */
+/*    background-attachment: fixed;*/
+    /* This is what makes the background image rescale based
+       on the container's size */
+    background-size: cover;
+    /* Set a background color that will be displayed
+       while the background image is loading */
+    background-color: #464646;
+}
+
+
+.stripe-5 {
+/*  color: white;
+  background: repeating-linear-gradient(55deg,#222,#222 10px,#333 10px,#333 20px);*/ 
+    background: rgba(233,202,1,1);
+    /*background: -moz-linear-gradient(-45deg, rgba(233,202,1,1) 0%, rgba(255,230,0,1) 8%, rgba(233,202,1,1) 13%, rgba(255,230,0,1) 20%, rgba(233,202,1,1) 30%, rgba(255,230,0,1) 37%, rgba(233,202,1,1) 43%, rgba(255,230,0,1) 48%, rgba(233,202,1,1) 53%, rgba(255,230,0,1) 57%, rgba(233,202,1,1) 63%, rgba(255,230,0,1) 68%, rgba(233,202,1,1) 72%, rgba(255,230,0,1) 77%, rgba(233,202,1,1) 82%, rgba(255,230,0,1) 87%, rgba(233,202,1,1) 91%, rgba(255,230,0,1) 95%, rgba(255,230,0,1) 100%);*/
+    /*background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(233,202,1,1)), color-stop(8%, rgba(255,230,0,1)), color-stop(13%, rgba(233,202,1,1)), color-stop(20%, rgba(255,230,0,1)), color-stop(30%, rgba(233,202,1,1)), color-stop(37%, rgba(255,230,0,1)), color-stop(43%, rgba(233,202,1,1)), color-stop(48%, rgba(255,230,0,1)), color-stop(53%, rgba(233,202,1,1)), color-stop(57%, rgba(255,230,0,1)), color-stop(63%, rgba(233,202,1,1)), color-stop(68%, rgba(255,230,0,1)), color-stop(72%, rgba(233,202,1,1)), color-stop(77%, rgba(255,230,0,1)), color-stop(82%, rgba(233,202,1,1)), color-stop(87%, rgba(255,230,0,1)), color-stop(91%, rgba(233,202,1,1)), color-stop(95%, rgba(255,230,0,1)), color-stop(100%, rgba(255,230,0,1)));*/
+    background: -webkit-linear-gradient(135deg, rgba(233,202,1,1) 0%, rgba(255,230,0,1) 2.5%, rgba(233,202,1,1) 5%, rgba(255,230,0,1) 7.5%, rgba(233,202,1,1) 10%, rgba(255,230,0,1) 12.5%, rgba(233,202,1,1) 15%, rgba(255,230,0,1) 17.5%, rgba(233,202,1,1) 20%, rgba(255,230,0,1) 22.5%, rgba(233,202,1,1) 25%, rgba(255,230,0,1) 27.5%, rgba(233,202,1,1) 30%, rgba(255,230,0,1) 32.5%, rgba(233,202,1,1) 35%, rgba(255,230,0,1) 37.5%, rgba(233,202,1,1) 40%, rgba(255,230,0,1) 42.5%, rgba(233,202,1,1) 45%, rgba(255,230,0,1) 47.5%, rgba(233,202,1,1) 50%, rgba(255,230,0,1) 52.5%, rgba(233,202,1,1) 55%, rgba(255,230,0,1) 57.5%, rgba(233,202,1,1) 60%, rgba(255,230,0,1) 62.5%, rgba(233,202,1,1) 65%, rgba(255,230,0,1) 67.5%, rgba(233,202,1,1) 70%, rgba(255,230,0,1) 72.5%, rgba(233,202,1,1) 75%, rgba(255,230,0,1) 77.5%, rgba(233,202,1,1) 80%, rgba(255,230,0,1) 82.5%, rgba(233,202,1,1) 85%, rgba(255,230,0,1) 87.5%, rgba(233,202,1,1) 90%, rgba(255,230,0,1) 92.5%, rgba(233,202,1,1) 95%, rgba(255,230,0,1) 97.5%, rgba(233,202,1,1) 100%);   
+    background: -ms-linear-gradient(135deg, rgba(233,202,1,1) 0%, rgba(255,230,0,1) 2.5%, rgba(233,202,1,1) 5%, rgba(255,230,0,1) 7.5%, rgba(233,202,1,1) 10%, rgba(255,230,0,1) 12.5%, rgba(233,202,1,1) 15%, rgba(255,230,0,1) 17.5%, rgba(233,202,1,1) 20%, rgba(255,230,0,1) 22.5%, rgba(233,202,1,1) 25%, rgba(255,230,0,1) 27.5%, rgba(233,202,1,1) 30%, rgba(255,230,0,1) 32.5%, rgba(233,202,1,1) 35%, rgba(255,230,0,1) 37.5%, rgba(233,202,1,1) 40%, rgba(255,230,0,1) 42.5%, rgba(233,202,1,1) 45%, rgba(255,230,0,1) 47.5%, rgba(233,202,1,1) 50%, rgba(255,230,0,1) 52.5%, rgba(233,202,1,1) 55%, rgba(255,230,0,1) 57.5%, rgba(233,202,1,1) 60%, rgba(255,230,0,1) 62.5%, rgba(233,202,1,1) 65%, rgba(255,230,0,1) 67.5%, rgba(233,202,1,1) 70%, rgba(255,230,0,1) 72.5%, rgba(233,202,1,1) 75%, rgba(255,230,0,1) 77.5%, rgba(233,202,1,1) 80%, rgba(255,230,0,1) 82.5%, rgba(233,202,1,1) 85%, rgba(255,230,0,1) 87.5%, rgba(233,202,1,1) 90%, rgba(255,230,0,1) 92.5%, rgba(233,202,1,1) 95%, rgba(255,230,0,1) 97.5%, rgba(233,202,1,1) 100%);     
+    background: linear-gradient(135deg, rgba(233,202,1,1) 0%, rgba(255,230,0,1) 2.5%, rgba(233,202,1,1) 5%, rgba(255,230,0,1) 7.5%, rgba(233,202,1,1) 10%, rgba(255,230,0,1) 12.5%, rgba(233,202,1,1) 15%, rgba(255,230,0,1) 17.5%, rgba(233,202,1,1) 20%, rgba(255,230,0,1) 22.5%, rgba(233,202,1,1) 25%, rgba(255,230,0,1) 27.5%, rgba(233,202,1,1) 30%, rgba(255,230,0,1) 32.5%, rgba(233,202,1,1) 35%, rgba(255,230,0,1) 37.5%, rgba(233,202,1,1) 40%, rgba(255,230,0,1) 42.5%, rgba(233,202,1,1) 45%, rgba(255,230,0,1) 47.5%, rgba(233,202,1,1) 50%, rgba(255,230,0,1) 52.5%, rgba(233,202,1,1) 55%, rgba(255,230,0,1) 57.5%, rgba(233,202,1,1) 60%, rgba(255,230,0,1) 62.5%, rgba(233,202,1,1) 65%, rgba(255,230,0,1) 67.5%, rgba(233,202,1,1) 70%, rgba(255,230,0,1) 72.5%, rgba(233,202,1,1) 75%, rgba(255,230,0,1) 77.5%, rgba(233,202,1,1) 80%, rgba(255,230,0,1) 82.5%, rgba(233,202,1,1) 85%, rgba(255,230,0,1) 87.5%, rgba(233,202,1,1) 90%, rgba(255,230,0,1) 92.5%, rgba(233,202,1,1) 95%, rgba(255,230,0,1) 97.5%, rgba(233,202,1,1) 100%); 
+}
+
+.header {
+    /* Location of the image */
+    /*height: 55px;*/
+}
+
+.header .leftside {
+    vertical-align: top;
+    width: 78.9%;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+}
+/*
+.header .leftside::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -65px;
+    background: transparent url("../resources/images/curveleft.png") no-repeat scroll 0% 0% / cover;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+.header .rightside {
+    width: 21.0938%;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    background-color: #EAEAEA;
+}
+
+/*
+.header .rightside::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -22px;
+    width: 100%;
+    background: transparent url("../resources/images/curveright.png") no-repeat scroll 0% 0% / cover;
+    height: 100%;
+}
+*/
+
+.wh-header {
+    height: 195px;
+    width: 100%;
+    min-width: 960px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: transparent url("../resources/images/menu-bg.png") no-repeat scroll center center;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.wh-social {
+    position: absolute;
+    top: 23px;
+    right: 0px;
+    height: 26px;
+	pointer-events: all;
+}
+
+.wh-header .wh-hold {
+    width: 960px;
+    margin: 0px auto;
+    height: 91px;
+    position: relative;
+}
+
+.wh-logo {
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    background: transparent url("../resources/images/header_logo.png") no-repeat scroll 0% 0% / cover;
+    width: 88px;
+    height: 91px;
+    display: block;
+	pointer-events: all;
+}
+
+.wh-header a  {
+    outline: medium none;
+    font-family: "PFHandbookMedium";
+    color: #3B3B3B;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.wh-social li {
+    float: left;
+    width: 25px;
+    height: 26px;
+    margin: 0px 0px 0px 10px;
+}
+
+.wh-social li a {
+    display: block;
+    width: 25px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.wh-social li a.fb {
+    background-image: url("../resources/images/header_fb_link.png");
+}
+
+.wh-social li a.yt {
+    background-image: url("../resources/images/header_yt_link.png");
+}
+
+.wh-social li a.tw {
+    background-image: url("../resources/images/header_tw_link.png");
+}
+
+/*
+.wh-footer {
+    padding: 0px;
+    background: transparent url("../resources/images/footer-bg.png") no-repeat scroll right bottom;
+    margin-top: -163px;
+    position: relative;
+    height: 163px;
+    clear: both;
+}
+*/
+.wh-footer {
+  padding: 0px;
+  background: transparent url("../resources/images/footer-bg.png") no-repeat scroll right top;
+  margin-top: -119px;
+  position: relative;
+  height: 121px;
+}
+/*
+.footer {
+    background-color: #000;
+    margin: 0 auto;
+    padding: 2% 1%;
+    position: relative;
+	top: -30px;
+    width: 85%;
+}
+*/
+.footer {
+    height: 2px;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    width: 87%;
+}
+
+.footer > span > a {
+    font-family: "pf_handbook_promedium";
+    font-size: 100%;
+    color : #aea9a9;
+}
+
+
+.section1 {
+    /* Location of the image */
+    background-image: url(../resources/images/section1_bg.jpg);
+    height: 646px;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 0;
+    margin-top: 66px;
+}
+
+.shapes {
+    bottom: -10px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+	pointer-events: none;
+}
+
+.shapes > img {
+	opacity:0.3;
+    width: 82%;
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.burgermenu {
+    /* Critical position and size styles */
+    min-height: 100%;
+    min-width: 27%;/*    min-width: 100%;*/
+    background-color: white; /* Needs a background or else the nav will show through */
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 100%;/*0*/
+    z-index: 1;
+    width: 21.0938%;/*249px;*/
+    
+    /* non-critical apperance styles */
+    padding: 8em 4em 4em 2%;
+    background: black;
+    /*background-image: linear-gradient(135deg, rgb(254,255,255) 0%,rgb(221,241,249) 35%,rgb(160,216,239) 100%);*/
+    background-size: 200%;
+}
+
+/* Nav Trigger */
+.burgertoggle {
+    /* critical styles - hide the checkbox input */
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label[for="burgertoggle"] {
+    /* critical positioning styles */
+    position: absolute;
+    /*left: 15px; */
+    left : 78.9062%;
+    top: 70px;
+    z-index: 2;
+
+    /* non-critical apperance styles */
+    height: 30px;
+    width: 47px;
+    cursor: pointer;
+    background-image: url("../resources/images/burgermenusvg.png" );
+    background-size: contain;
+    background-position: top;
+}
+
+label[for="burgertoggle"]::before {
+    color: #000;
+}
+
+.burgertoggle:checked + label[for="burgertoggle"]::before {
+    color: #FFF;
+}
+
+
+.burgertoggle:checked + label[for="burgertoggle"]::before, label[for="burgertoggle"]::before {
+    content: "MENU";
+    font-size: 160%;
+    left: 0px;
+    position: absolute;
+    top: -32px;
+    font-family: "pf_handbook_problack";
+}
+
+
+/* Make the Magic Happen */
+.burgertoggle + label, .burgermenu {
+    transition: left 0.2s;
+}
+
+.burgertoggle:checked + label {
+    left: 81%;
+    background-image: url("../resources/images/burgermenuontillsvg.png");
+    background-repeat: no-repeat;
+}
+
+.burgertoggle:checked ~ .burgermenu {
+    left: 78.9%;
+    /*box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);*/
+}
+
+/* // TODO: check if this is really necessary, might interfere with other stuff, might be set already (most likely
+*/
+body, html  {
+    /* Without this, the body has excess horizontal scroll when the menu is open */
+    overflow-x: hidden;
+    /*also probably need to add these, also the html element above*/
+    width:100%;
+    max-width:100%;
+    -webkit-overflow-scrolling: touch;
+    margin: auto;
+    background-color: #000;
+}
+
+/* Additional non-critical styles */
+/*h1, h3, p {
+    max-width: 600px;
+    margin: 0 auto 1em;
+}*/
+/*
+code {
+    padding: 2px;
+    background: #ddd;
+}
+*/
+/*END OF BURGER MENU FUNCTIONALITY*/
+/*BURGER MENU ITEMS*/
+ul.burgeritems {
+    width: 70%;
+    min-width: 10%;
+    max-width: 80%;
+    line-height: 22px;
+    font-family: "PFHandbookPro_Medium";
+    font-size: 100%;
+}
+
+ul.burgeritems a {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "pf_handbook_promedium","pf_handbook_problack";
+    font-size: 160%;
+  
+
+}
+
+ul.burgeritems  a:hover {
+    color:  #FFFFFF;
+}
+
+ul.burgeritems a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFE800;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+ul.burgeritems a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+/*BURGER MENU STUFF*/
+ul.banners {
+    margin:-560px 0 30px 10%;
+}
+
+ul.banners > li:first-child > span:first-child {
+    font-family: "pf_handbook_problack", serif;
+    font-size: 450%;
+    line-height: 49px;
+}
+
+ul.banners > li:first-child > span:nth-child(5){
+    font-family: "pf_handbook_problack", serif;
+    font-size: 200%;
+    line-height: 31px;
+}
+
+ul.banners > li:first-child > span:nth-child(3), ul.banners > li:first-child > span:nth-child(7) {
+    font-family: "pf_handbook_promedium", serif;
+    font-size: 200%;
+     line-height: 23px;
+}
+
+ul.banners > li:first-child > span:nth-child(3) {
+    font-size: 136%;
+    line-height: 19px;
+}
+.banners > li {
+    display: inline-block;
+    width: 141px;
+    height: 156px;
+    vertical-align: top;
+    padding: 17px 10px 0;
+    line-height: 16px
+}
+
+.banners > li:first-child {
+    background-color: #fee600;
+    margin: 0px 12px 12px 0px;
+    color: #000;
+}
+
+.banners > li:last-child {
+/*        padding: 0;*/
+}
+
+.banners > li + li {
+    background-color: #000;
+    height: 140px;
+    padding-top: 35px;
+}
+
+.banners > li + li > span:first-child, .banners > li + li > span:nth-child(3) {
+    font-family: "pf_handbook_problack", serif;
+    font-size: 200%;
+    line-height: 25px;
+}
+
+.banners > li + li > span:nth-child(3) {
+    letter-spacing: 3px;
+}
+.banners > li + li > span:nth-child(5) {
+    font-family: "pf_handbook_promedium", serif;
+    font-size: 150%;
+    line-height: 31px;
+}
+
+.banners > li + li > h2 {
+    height: 10px;
+    margin-top: 30px;
+    padding: 0;
+    width: 140px;
+    margin-left: -10px;
+}
+
+.banners > li > p {
+    display: inline-block;
+}
+
+span.maintext {
+    display: inline-block;
+    text-align: center;
+    /*margin: 100px 0% 0% 38%;*/
+    width: 100%;
+}
+
+span.maintext > span:first-child, span.maintext > span:nth-child(3), span.maintext > span:nth-child(4){
+    font-family: "pf_handbook_problack", serif;
+    font-size: 280%;   
+    margin-top: -6px;
+    display: inline-block;
+}
+
+span.maintext > span:nth-child(6), span.maintext > span:nth-child(8), span.maintext > span:nth-child(10), span.maintext > span:nth-child(12), span.maintext > span:nth-child(14){
+    font-family: "pf_handbook_promedium", serif;
+    font-size: 140%;
+}
+
+span.maintext > span:nth-child(6) {
+	font-size: 220%;   
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+span.maintext  > span:nth-child(3) {
+    color: #ffe800;
+}
+
+/*
+@media screen and (max-width: 900px){
+    span.maintext > span:first-child, span.maintext > span:nth-child(3), span.maintext > span:nth-child(4){
+		font-size: 240%;   
+	}
+	span.maintext > span:nth-child(6), span.maintext > span:nth-child(8), span.maintext > span:nth-child(10), span.maintext > span:nth-child(12), span.maintext > span:nth-child(14){
+		font-size: 130%;
+	}
+	span.maintext > span:nth-child(6) {
+		font-size: 220%;
+	}
+}
+*/
+
+span.arrow-down-img {
+    background: url("../resources/images/section1_arrow.png") center no-repeat;
+    height: 78px;
+    display: block;
+    text-align: center;
+    color: black;
+    cursor: pointer;    
+    font-family: "pf_futura_neu_condbold";
+    margin-top: 60px;
+	
+	-webkit-transition: margin 0.5s ease-out;
+	transition: margin 0.5s ease-out;
+}
+span.arrow-down-img:hover {
+    margin-top: 70px;
+}
+
+span.arrow-down-img > a {
+    text-decoration: none;
+    margin-top: 2px;
+    display: inline-block;
+    color: black;
+    width: 119px;
+}
+span.arrow-down-img > a > span:first-child {
+    font-family: "pf_futura_neu_condbold", serif;    
+    font-size: 200%;
+    font-weight: 800;
+}
+
+span.arrow-down-img > a > span:last-child {
+    font-family: "pf_futura_neu_condmedium", serif; 
+    font-size: 150%;   
+}
+
+/*I ALSO HAVE THE FUCKING TRIANGLE!!!*******/
+/*Down pointing*/
+.triangle-down {
+	width: 10%;
+	height: 0;
+	padding-left:10%;
+	padding-top: 10%;
+	overflow: hidden;
+}
+.triangle-down:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	margin-left:-500px;
+	margin-top:-500px;
+	border-left: 500px solid transparent;
+	border-right: 500px solid transparent;
+	border-top: 500px solid #4679BD;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f00;
+}
+/*END OF TRIANGLE*/
+
+.section3 {
+    position: relative;
+}
+
+.section4 {
+   background-image: url("../resources/images/section4_bg.jpg");
+   height: 840px;
+   position: relative;
+   /*padding-top: 269px;*/
+}
+
+.section4 .endtext {
+    color: #fff;
+    font-family: "pf_handbook_prolight";
+    max-width: 34%;
+    /*
+	position: relative;
+    bottom: 180px;
+	*/
+}
+.b4endtext {
+    bottom: 200px;
+    position: relative;
+}
+@media screen and (max-width: 1300px){
+   .section4 .b4endtext {
+		bottom: 140px;
+   }
+}
+@media screen and (max-width: 1000px){
+   .section4 .b4endtext {
+		bottom: 110px;
+   }
+   .section4 .endtext {
+		max-width: 60%;
+   }
+}
+@media screen and (max-width: 800px){
+   .section4 .b4endtext {
+		bottom: 80px;
+   }
+   .section4 .endtext {
+		max-width: 60%;
+   }
+}
+@media screen and (max-width: 650px){
+   .section4 .b4endtext {
+		bottom: 60px;
+   }
+   .section4 .endtext {
+		max-width: 80%;
+   }
+}
+@media screen and (max-width: 500px){
+   .section4 .b4endtext {
+		bottom: 50px;
+   }
+   .section4 .endtext {
+		max-width: 100%;
+   }
+}
+
+/* PARAGRAPH*/
+.endtext > p:first-child {
+    font-family: "pf_handbook_problack";
+    color: black;
+    margin-bottom: 40px;
+    font-size: 380%;
+}
+
+.endtext > span.blackerKeys {
+    font-family: "pf_handbook_problack";
+    line-height: 20px;
+        
+}
+
+.endtext sup {
+    position: relative;
+    top: -5px;
+    font-size: 80%;       
+}
+
+
+
+.endtext > a  {
+    color: #fff;
+}
+
+/*END OF FOOTER*/
+
+/*POP-UP STUFF*/
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /*background: #000 none repeat scroll 0% 0%;*/
+	background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+    transition: opacity 500ms ease 0s;
+    visibility: hidden;
+    opacity: 0;
+    top: 0px;
+    vertical-align: middle;
+    z-index: 25;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    background: transparent none repeat scroll 0% 0%;
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+    transition: all 1s ease-in-out 0s;
+    z-index: 7;
+    position: relative;
+    margin: auto;
+    top: 97px;
+}
+.popupLyrics {
+    height: 85%;
+}
+#popup3.overlay {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+}
+.popup h2 {
+    color: #fff;
+    position: absolute;
+    top: 27px;
+    left: 55px;
+    font-family: "pf_futura_neu_condbold";
+    font-weight: 600;
+    font-size: 100%;
+	z-index: 22;
+}
+.popupLyrics h2 {
+    left: 45px;
+    top: -20px;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fee600;
+	z-index: 21;
+}
+.popupLyrics .close {
+	left: 15px;
+    top: -27px;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+.popup .content {
+    max-height: 100%;
+    overflow: auto;
+    height: 100%;
+}
+
+#popup2 .content{
+	max-height: 720px;
+}
+#popup2.overlay {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+}
+
+.popup .c1 {
+    background-image: url("../resources/images/popup_bg1.jpg");
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.popup .c2 {
+    /*background-image: url("../resources/images/popup_bg2.jpg");*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content > .c1 > div {
+    width: 100%; height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 2s ease-in-out 0s;
+    text-align: center;
+    /*position: relative;
+    top: 0px;
+    left: 0px;*/ /* this interferes with the click on the close among other, but not sure how the elements will be positioned */
+}
+.content > .c1 > div:first-child {
+    background-image: url('../resources/images/popup_screen1_1.png');
+}
+
+.content > .c1 > div+div {
+    /*background-image: url('../resources/images/popup_screen1_1.png');*/
+    background-color: transparent;;
+}
+
+.content > .c1 > div+div+div {
+    background-image: url('../resources/images/upload_step3.png');
+    background-color: transparent;
+}
+
+span#fileupload {
+    width: 161px;
+    height: 100px;
+    display: inline-block;
+    background-color: transparent;
+    position: relative;
+    top: 58%;
+    cursor: pointer;
+	
+	-webkit-transition: margin 0.5s ease-out;
+	transition: margin 0.5s ease-out;
+}
+span#fileupload:hover{
+	margin:10px;
+}
+.shareuplodedimg{
+	position: relative;
+  	top: 75%;
+}
+.shareuplodedimg img{
+	cursor:pointer;
+	-webkit-transition: margin 0.5s ease-out;
+	transition: margin 0.5s ease-out;
+}
+.shareuplodedimg img:hover{
+	margin:10px;
+}
+
+form.dropzone {
+    position: relative;
+    top: 20%;
+    margin: auto;
+    /*width: 50%;*/
+    /*width: 320px;/* trying to center the texts with the image in the preview*/
+    width: 100%;/* this does not necessarily align, but makes a nothing responsive thing... maybe position relatively the text and be done with it*/
+   color : #fff; 
+   line-height: 33px;
+}
+form.dropzone span {
+	font-family: "pf_handbook_prolight",serif;
+	font-size: 120%; 
+}
+
+form input {
+	background-color: #ffe800;
+    border-style: none;
+    font-family: "pf_handbook_prolight",serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    /*margin: 7px;*/
+	margin: 0;
+    max-width: 158px;
+    padding: 2px 22px;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    background:url(../resources/images/checknot.png) left top no-repeat;
+	cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    vertical-align: middle;
+    width: 40px;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(../resources/images/checkyes.png) left top no-repeat;
+}
+
+.uploadPhotoText {
+	text-align: left;
+    display: inline-block;
+    max-width: 404px;
+}
+.uploadPhotoText a {
+	color: #FFF;
+}
+
+img.data-dz-thumbnail {
+    width: 140%;
+    max-width: 400px;
+}
+
+button[name=submitall] {
+	color: #000;
+    font-family: "pf_futura_neu_condmedium";
+    font-size: 150%;
+	
+    border: medium none;
+    width: 200px;
+    height: 165px;
+    background: transparent none repeat scroll 0% 0%;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+	
+	-webkit-transition: margin 0.5s ease-out;
+	transition: margin 0.5s ease-out;
+
+}
+button[name=submitall]:hover {
+	margin:10px;
+}
+
+button[name=submitall] > span {
+}
+button[name=submitall] > span:first-child{
+	font-family: "pf_futura_neu_condbold",serif;
+    font-size: 200%;
+    font-weight: 800;
+}
+/*
+button[name=submitall]::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    background: url('../resources/images/section1_arrow.png') 0 0 repeat;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+*/
+@media screen and (max-width: 700px){
+    .boxx{
+        width: 100%;
+    }
+    .popup{
+        width: 100%;
+    }
+}
+/*END OF POPUPSTUFF*/
+
+/*gallery*/
+
+.swiper-slide img {
+    z-index: 1;
+    filter: grayscale(1) ;
+    -webkit-filter: grayscale(100%);
+    margin-top: 0px;
+}
+
+.swiper-slide.hovered img {
+    transform: rotateY(180deg);  
+    z-index: 1;
+    position: relative;
+}
+
+.swiper-slide.hovered::before {
+    content: "";
+    background: url("../resources/images/gallery/galleryover.png");
+    z-index: 2;
+    position: absolute;
+    width: 103%;
+    height: 103%;
+    top: 0px;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	pointer-events: none;
+   }
+
+span.infodata {
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: "pf_futura_neu_condbold";
+    font-weight: 700;
+    font-size: 70%;
+    height: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 43%;
+    transition: all 0.5s ease 0s;
+    width: inherit;
+    z-index: 12;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    span.infodata {
+        vertical-align: middle;
+        padding-top: 72px;
+        top: 0%;
+        height: 100%;
+    }
+}
+
+span.infodata > span {
+	color: #696863;
+	font-family: "pf_futura_neu_condbold";
+	font-size: 60%;
+	width: 100%;
+}
+
+span.infodata:hover {
+    opacity: 1;
+}
+
+
+.swiper-container::before {
+    border-left: 100px solid black;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 3;
+}
+
+.swiper-container::after {
+    border-left: 100px solid black;
+    content: "";
+    display: block;
+    height: 100%;
+    opacity: 0.9;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+span.infodata, span.infodata_mini {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.overlay_mini {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+    transition: opacity 500ms ease 0s;
+    visibility: hidden;
+    opacity: 0;
+    top: 0px;
+    vertical-align: middle;
+    z-index: 5;
+}
+
+.overlay_mini:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup_mini {
+    background: #000 none repeat scroll 0px 0px;
+    border-radius: 0px;
+    height: 46%;
+    margin: auto;
+    position: relative;
+    top:296px;
+    transition: all 1s ease-in-out 0s;
+    width: 520px;
+    z-index: 7;
+}
+
+.popup_mini h2 {
+    color: #fff;
+    position: absolute;
+    top: 27px;
+    left: 55px;
+    font-family: "pf_futura_neu_condbold";
+    font-weight: 600;
+    font-size: 100%;
+    z-index: 22;
+}
+.popup_mini .close {
+    position: absolute;
+    right: -31px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fee600;
+    z-index: 21;
+}
+
+.popup_mini .close:hover {
+    color: #06D85F;
+}
+.popup_mini .content {
+    max-height: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.popup_mini .c1 {
+    background-image: url("../resources/images/popup_bg1.jpg");
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.clickImage {
+    visibility: hidden;
+}
+
+
+.c4 > div {
+    display: inline-block;
+    text-align: center;
+}
+
+.c4 > div:first-child {
+    background-color: rgba(0,0,0,0.4);
+}
+
+.c4 > div + div {
+    background-color: rgba(0,0,0,1);
+    vertical-align: top;
+    height: 100%; 
+    padding: 24px 0px 0px 12px;
+}
+
+img.infoImage_mini {
+
+}
+
+span.infodata_mini {
+    color: white;
+    font-family: "pf_futura_neu_condbold";
+    font-size: 105%;
+    font-weight: 700;
+	position: absolute;
+    right: 26px;
+    top: 15px;
+}
+
+span.infodata_mini > span {
+    color: #696863;
+    font-family: "pf_futura_neu_condbold";
+    font-size: 80%;
+    width: 100%;
+}
+
+img.thingy {
+    position: absolute;
+    right: 62px;
+    bottom: 5px;
+}
+
+@media screen and (max-width: 320px){
+     div.section3 > div:nth-child(2) > img {
+           max-width: 90%;
+           max-height: 50%;
+       }
+    
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-container::before, .swiper-container::after {
+        opacity: 0;
+    }
+    
+    .popup_mini {
+        width: 236px;
+        height: 320px;
+    }
+    
+     .popup_mini img:first-child {
+         max-width: 60%;
+         float: left;
+     }
+
+    ul.banners {
+        margin: -323px 0px 30px 10%;
+    }
+
+    .section1 {
+        height: auto;
+        margin-top: 89px;
+        top: auto;
+        bottom: auto;
+        left: auto;
+    }
+
+    .burgertoggle:checked ~ .burgermenu {
+        left: 62.9%;
+    }
+
+    .burgermenu {
+        width: 39.094%;
+        padding: 8em 4em 1em 2%;
+    }
+
+    ul.burgeritems a {
+        font-size: 135%;
+    }
+
+    img.data-dz-thumbnail {
+        width: 60%;
+        max-width: 320px;
+    }
+
+    .popup {
+        width: 87%;
+        height: 100%;
+    }
+
+    form.dropzone {
+        top: 0;
+    }
+
+    #my-awesome-dropzone ul {
+       /* width: 50%;*/
+    }
+/*
+    label[for="burgertoggle"] {
+        background-image: url("../resources/images/burgermenusvg.png" );
+    }
+*/
+    .popup .close {
+        top: -32px;
+        left: 18px;
+    }
+
+    .popup h2 {
+        top: -22px;
+        left: 45px;
+    }
+}

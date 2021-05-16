@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hereYellow{
+	color: #FFE800;
+}
+
+/* Fonts*/
+.boldedTips, .boldedYellowTips{
+	font-family: "pf_handbook_problack",serif;
+    font-size: 100%;
+}
+
+.UlboxesTips{
+	overflow:hidden;
+}
+.boxTips{
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #464646;
+
+	text-align: center;
+	vertical-align: middle;
+	
+	
+	float:left;
+	display:inline;
+	
+	position:relative;
+}
+.boxTips img, .boxTips span{
+	color: #FFF;
+	margin:auto;
+}
+
+/* Lists holding content */
+.boxSubTextTips{
+	/* Fonts */
+	font-family: "pf_handbook_prolight",serif;
+    font-size: 125%;
+	color: #FFE800;
+	list-style-type: decimal;
+	
+	/* Layout */
+	display: table;
+	text-align:left;
+	margin:auto;
+	max-width: 76%;
+}
+
+div .boldedYellowTips{
+	color: #FFE800;
+}
+
+.boxSet1Tips{	
+	height:720px;
+	background-color: #222224;
+}
+#box1Tips { 
+    background-image: url("../resources/images/tutorial/tutimg1.jpg");	
+}
+#box2Tips { 
+    background-image: url("../resources/images/tutorial/tutimg2.jpg");	
+}
+#box3Tips {
+	background-image: url("../resources/images/tutorial/tutimg3.jpg");	
+}
+
+
+#doubleTips > li  { width:50%;} /* 2 col */
+#tripleTips > li  { width:33.333%; } /* 3 col */
+#quadTips > li    { width:25%; } /* 4 col */
+#sixTips > li     { width:16.666%; } /* 6 col */
+
+
+.titleTips {
+	padding-top:66%;
+}
+.titleTips img {
+	max-width: 374px;
+	width:90%;
+}
+
+
+
+
+

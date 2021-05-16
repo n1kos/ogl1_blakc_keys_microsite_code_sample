@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.Ulboxes{
+	overflow:hidden;
+}
+.imgPopupLink{
+	position:absolute;
+	display:block; 
+	padding: 0; 
+	margin: 0; 
+	width: 100%; 
+	height: 100%;
+	z-index: 4;
+}
+
+.box{
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: #464646;
+	overflow:hidden;
+	
+	text-align: center;
+	vertical-align: middle;
+
+	float:left;
+	display:inline;
+	
+	position:relative;
+}
+.box img, .box span{
+	color: #FFF;
+	margin:auto;
+}
+
+.bolded, .boldedYellow{
+	font-family: "pf_handbook_problack",serif;
+    font-size: 100%;
+}
+div .boldedYellow{
+	color: #FFE800;
+}
+/* Lists holding content */
+.boxSubText{
+	/* Fonts */
+	font-family: "pf_handbook_prolight",serif;
+    font-size: 145%;
+	color: #FFE800;
+	list-style-type: decimal;
+	
+	/* Layout */
+	display: table;
+	text-align:left;
+	margin:auto;
+	max-width: 80%;
+}
+.boxSmallerText{
+	font-size: 120%;
+    max-width: 60%;
+}
+
+
+@media screen and (max-width: 900px){
+   .boxSubText{
+		font-size: 130%;
+   }
+   .boxSmallerText{
+		font-size: 100%;
+	}
+}
+
+
+.boxSet1{	
+	height:250px;
+	/*height: 450px;
+	padding: 50px;*/
+}
+
+.boxSet2{
+	height:450px;
+}
+
+#box1 {
+    background-color: #222224;
+}
+#box2 { 
+   background-color: #363537;	 
+		
+}
+#box3 {
+	background-image: url("../resources/images/section2/lyrics.jpg");	
+}
+
+#box4 { 
+	background-image: url("../resources/images/section2/photoback.jpg");
+	
+}
+/*
+#box4:hover {
+    background-image: url("../resources/images/section2/lyrics.jpg");
+}
+*/
+
+.replaceImg {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+	opacity: 0;
+	transform: scale(1.5,1.5);
+}
+
+.overReplace{
+	position:relative;
+    z-index: 3;
+	/*pointer-events: none;*/
+	
+}
+.boxImgAdjust img{
+    max-width: 80%;
+}
+.fullBg {
+    /*display: none;*/
+	display: block;
+	width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.active {
+    z-index: 2;
+}
+.lastActive {
+    z-index: 1;
+}
+
+#double > li  { width:50%;} /* 2 col */
+#triple > li  { width:33.333%; } /* 3 col */
+#quad > li    { width:25%; } /* 4 col */
+#six > li     { width:16.666%; } /* 6 col */
+
+@media screen and (max-width: 900px){
+   #double > li  { width:100%;} /* 2 col */
+}
+
+#arrowCorner {
+    bottom: -3px;
+    position: absolute;
+    right: 0;
+}
+
+#facebook-login{
+	cursor:pointer;
+	position: relative;
+    top: 20%;
+	z-index: 5;
+}
+
+#rock1 {
+    float: right;
+    margin: 0 auto;
+    position: relative;
+    right: 10%;
+	padding-top: 5%;
+}
+#rock2 {
+    margin: 0 auto;
+    padding-bottom: 15%;
+    padding-top: 5%;
+    position: relative;
+    width: 37%;
+}
+
+
+
+
+
+
+
+
+

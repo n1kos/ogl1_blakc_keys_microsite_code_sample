@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+.UlboxesLyr{
+  overflow: hidden;
+}
+/* Sets of Lyrics Boxes */
+.boxLyr{
+	background-color: #464646;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+	float: left;
+    position: relative;
+	
+	height: auto;
+	/*height:240px;	*/
+}
+.boxLyr span {
+    font-family: "pf_handbook_problack";
+    font-size: 1.1em;
+    font-weight: bold;
+	color: #fff;
+    margin-left: 2%;
+}
+.boxLyrSet1 { 
+    /*
+	background-image: url("../resources/images/lyrics_grid/img1.jpg");
+	*/
+	background-color: #000;
+	
+}
+.boxLyrSet2 { 
+    /*
+	background-image: url("../resources/images/lyrics_grid/img2.jpg");
+	*/
+	background-color: #000;	
+}
+
+.printImg {
+    height: 83%;
+	text-align:center;
+}
+.printImg > img {
+    max-width: 100%;
+    height: auto;
+	cursor:pointer;
+}
+
+.printThisImg {
+    position: absolute;
+    top: -200px;
+    z-index: -1;
+}
+.printThisImg > img {
+    width: 10px;
+}
+@media screen and (max-width: 1800px){
+    .printThisImg > img {
+	  width: 100%;
+	}
+}
+
+
+.lyricsSet {
+    background-color: #000;
+    bottom: 0;
+    display: table;
+    position: absolute;
+	width: 100%;
+}
+
+.lyricsSet div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.theLinksLyr {
+    width: 7%;
+	cursor: pointer;
+}
+
+
+#doubleLyr > li  { width:50%;} /* 2 col */
+#tripleLyr > li  { width:33.333%; } /* 3 col */
+#quadLyr > li    { width:25%; } /* 4 col */
+#fiveLyr > li    { width:20%; } /* 5 col */
+#sixLyr > li     { width:16.666%; } /* 6 col */
+
+@media screen and (max-width: 800px){
+    #fiveLyr > li  { width:33.333%;} 
+}
+@media screen and (max-width: 600px){
+    #fiveLyr > li  { width:50%;} 
+}
+@media screen and (max-width: 400px){
+    #fiveLyr > li  { width:100%;} 
+}
+
+
+
